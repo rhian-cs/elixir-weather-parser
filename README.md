@@ -1,21 +1,27 @@
 # WeatherParser
 
-**TODO: Add description**
+This application fetches weather data from the [American Weather API](https://w1.weather.gov/xml/current_obs/) and displays it in a nice format.
 
-## Installation
+## Running the application
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `weather_parser` to your list of dependencies in `mix.exs`:
+In order to build the application, you can use:
 
-```elixir
-def deps do
-  [
-    {:weather_parser, "~> 0.1.0"}
-  ]
-end
-```
+    mix escript.build
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/weather_parser](https://hexdocs.pm/weather_parser).
+And to run it:
 
+    ./weather_parser
+
+## Creating the docs
+
+Run:
+
+    mix docs
+
+This will generate the docs at the `docs/index.html` directory.
+
+## Running the tests
+
+Run:
+
+    mix test
